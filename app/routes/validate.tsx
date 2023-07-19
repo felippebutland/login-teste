@@ -10,7 +10,7 @@ export const action = async ({ request }: ActionArgs) => {
     const values = `${formData.get('firstValue')}${formData.get('secondValue')}${formData.get('thirdValue')}${formData.get('fourthValue')}${formData.get('fifthValue')}`
 
     const cookie = request.headers.get('Cookie').split('=')[1];
-
+    
     const {
       email
     } = transformObject(cookie);
